@@ -1,0 +1,99 @@
+.landing-page-container {
+  .landing-page-backgrounImg {
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 100vh;
+    }
+  }
+  .top-container{
+    position: absolute;
+    top: 0;
+    display: flex;
+  }
+  .landing-page-nav-bar {
+    flex-grow: 2;
+  }
+  .landing-page-login{
+    flex-grow: 1;
+  }
+  .landing-page-footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    z-index: 1001;
+    .nav-bar-items{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  .nav-bar-items{
+    border-bottom: 1px solid rgba(#fff, 0.4);
+    cursor: pointer;
+    &-list{
+        padding: 0.5rem;
+        &.active{
+            border-bottom:2px solid #fff;
+        }
+    }
+  }
+  .flight-form{
+    .form-group{
+      position: relative;
+      &-label{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        color: #00000088;
+      }
+      &-control{
+        background-color: #fff;
+        border: 1px solid #fff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  .form-group{
+    &-date{
+      .form-group-control{
+        &-start{
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          &::placeholder{
+            color: red;
+          }
+        }
+        &-end{
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+  .date{
+    &-start{
+      position: relative;
+      .form-group-label{
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &-end{
+      position: relative;
+      .form-group-label{
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .logo-container {
+    .logo{
+      color: #fff;
+      border: 0;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+<div class="landing-page-container">
+  <div class="landing-page-backgrounImg">
+    <img
+      src="https://images.unsplash.com/photo-1704531815335-dab68018e8a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8"
+      alt="temp"
+    />
+  </div>
+  <app-backdrop [backdropColor]="'#00000033'"></app-backdrop>
+  <div class="top-container w-100">
+    <div
+      class="landing-page-nav-bar d-flex w-100 gap-3 justify-content-center px-5"
+    >
+      <app-nav-bar class="w-100">
+        <nav class="navbar navbar-expand-lg bg-body-transparent">
+          <div class="container-fluid">
+            <div class="logo-container text-white">
+                <button class="bg-transparent logo" routerLink="/home">Logo</button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav justify-content-center w-100 mb-2 mb-lg-0 gap-4">
+                <li class="nav-item">
+                  <a class="nav-link text-white"
+                    routerLink="/home">Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" routerLink="/tours">Tours</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" routerLink="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" routerLink="/air_tickets">Air Tickets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </app-nav-bar>
+    </div>
+    <div class="landing-page-login">
+      <div class="btn">
+        <button type="button" class="btn btn-primary">login</button>
+      </div>
+    </div>
+  </div>
+  <div class="landing-page-footer flex-column w-100 justify-content-center">
+    <app-nav-bar>
+      <nav slot="nav-bar" class="d-flex justify-content-center mb-4">
+        <ul class="nav-bar-items d-flex m-2 p-0 gap-4">
+          <li class="nav-bar-items-list gap-2 d-flex active" routerLinkActive="active">
+            Tours <fa-icon [icon]="faSuitCase"></fa-icon>
+          </li>
+          <li class="nav-bar-items-list gap-2 d-flex">
+            Housing <fa-icon [icon]="faHouse"></fa-icon>
+          </li>
+          <li class="nav-bar-items-list gap-2 d-flex">
+            Air Tickets <fa-icon [icon]="faPlane"></fa-icon>
+          </li>
+          <li class="nav-bar-items-list gap-2 d-flex">
+            Car Rental <fa-icon [icon]="faCar"></fa-icon>
+          </li>
+        </ul>
+      </nav>
+    </app-nav-bar>
+    <form class="flight-form mb-5 justify-content-center d-flex gap-4">
+      <div class="form-group">
+        <label for="location" class="form-group-label d-flex gap-2">
+          <fa-icon [icon]="faLocationDot"></fa-icon>Location</label
+        >
+        <input
+          type="text"
+          name="location"
+          id="location"
+          class="form-group-control"
+        />
+      </div>
+      <div class="form-group">
+        <div class="form-group-date d-flex">
+          <div class="date-start">
+            <label for="location" class="form-group-label d-flex gap-2"></label>
+            <input
+              type="date"
+              name="location"
+              id="location"
+              class="form-group-control-start form-group-control"
+            />
+          </div>
+          <div class="date-end">
+            <label for="location" class="form-group-label d-flex gap-2"></label>
+            <input
+              type="date"
+              name="location"
+              id="location"
+              class="form-group-control-end form-group-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="location" class="form-group-label d-flex gap-2"
+          > <fa-icon [icon]="faLocationDot"></fa-icon>Location</label
+        >
+        <input
+          type="text"
+          name="location"
+          id="location"
+          class="form-group-control"
+        />
+      </div>
+      <div class="form-group">
+        <button
+          type="button"
+          name="location"
+          id="location"
+          class="form-group-control d-flex gap-2"
+        ><fa-icon [icon]="faLocationDot"></fa-icon>Search</button>
+      </div>
+    </form>
+  </div>
+</div>
